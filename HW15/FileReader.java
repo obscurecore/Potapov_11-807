@@ -1,5 +1,3 @@
-package ru.kpfu.itis.textsimilarity;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -15,7 +13,7 @@ public class FileReader {
         double coef = analyzer.analyze(new FileTextProvider(file1), new FileTextProvider(file2));
         double cosCoef = cosAnalyzer.analyze(new FileTextProvider(file1), new FileTextProvider(file2));
     {
-        System.out.println("Жакард через файл "+coef);
-        System.out.println("Косинус через файл "+cosCoef);
+        System.out.println("Жакард "+coef);
+        System.out.println("Косинус "+cosCoef);
     }
 }
