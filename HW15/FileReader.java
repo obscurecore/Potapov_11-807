@@ -7,8 +7,8 @@ public class FileReader {
         TextAnalyzer analyzer = new JacardTextAnalayzer();
         TextAnalyzer cosAnalyzer = new CosMethod();
         //Scanner scFile = new Scanner(new File("C:\\inform\\myhomework\\home15\\src\\ru\\kpfu\\itis\\textsimilarity\\files\\Text.txt"));
-        File file1 = new File("C:\\inform\\myhomework\\home15\\src\\ru\\kpfu\\itis\\textsimilarity\\files\\Text1.txt");
-        File file2 = new File("C:\\inform\\myhomework\\home15\\src\\ru\\kpfu\\itis\\textsimilarity\\files\\Text2.txt");
+        File file1 = new File("C:\\home15\\src\\Text1.txt");
+        File file2 = new File("C:\\home15\\src\\Text2.txt");
         //ArrayList<String> file = new ArrayList<>();
         double coef = analyzer.analyze(new FileTextProvider(file1), new FileTextProvider(file2));
         double cosCoef = cosAnalyzer.analyze(new FileTextProvider(file1), new FileTextProvider(file2));
