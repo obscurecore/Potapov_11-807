@@ -1,4 +1,3 @@
-package ru.kpfu.itis.textsimilarity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,22 +63,3 @@ public class CosMethod implements TextAnalyzer {
     }
 }
 
-/* private double cosSimilarityList1(List<String> list1) {
-        int list1Count = 0;
-        for (String word : list1) {
-            if (list1.contains(word)) {
-                list1Count++;
-            }
-        }
-        return (double) list1Count;
-    }*/
-
-   /* private double cosSimilarityList2(List<String> list2) {
-        int list2Count = 0;
-        for (String word : list2) {
-            if (list2.contains(word)) {
-                list2Count++;
-            }
-        }
-        return (double) list2Count;
-    }*/
